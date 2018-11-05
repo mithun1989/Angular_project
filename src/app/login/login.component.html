@@ -1,0 +1,8 @@
+<app-test *ngIf="!flag" [parentData]="parentData"></app-test>
+<div *ngIf="flag">
+	UserName : <input type="text" [(ngModel)]="UserName">
+  <br>
+  password : <input type="password"  [(ngModel)]="Password">
+  <br>
+  <button (click)="login()">Login</button>
+</div>

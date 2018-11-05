@@ -1,0 +1,35 @@
+<div>
+
+
+	<app-login *ngIf="!flag" [parentData]="parentData"></app-login>
+
+	<br>
+<div *ngIf="flag" >
+  <div>
+    <label>UserName</label>
+    <input  type="email" [(ngModel)]="txtUserName"><br/><br/>
+  </div>
+  <div>
+    <label>Name</label>
+    <input  type="text" [(ngModel)]="txtName"><br/><br/>
+  </div>
+  <div>
+    <label>password</label>
+    <input  type="password"  [(ngModel)]="txtPassword"><br/><br/>
+  </div>
+  <div>
+    <label>ConfirmPassword</label>
+    <input type="password" [(ngModel)]="confirmPwd"><br/><br/>
+  </div>
+  <div>
+    <label>Phone</label>
+    <input type="tel" [(ngModel)]="phone"><br/><br/>
+  </div>
+
+  <div>
+    <label>Address</label>
+    <input type="text" [(ngModel)]="address"><br/><br/>
+  </div>
+  <button (click)="submit()">submit</button>
+  </div>
+</div>
